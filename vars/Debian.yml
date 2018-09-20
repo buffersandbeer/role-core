@@ -1,0 +1,18 @@
+---
+
+__standard_packages:
+    - curl
+    - git
+    - htop
+    - netcat
+    - python
+    - python3
+    - python-pip
+    - python3-pip
+    - tmux
+    - tree
+    - vim
+    - vim-common
+    - wget
+    - zsh
+    - unzip

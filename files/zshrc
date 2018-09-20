@@ -1,0 +1,11 @@
+export ZSH=$HOME/.oh-my-zsh
+ZSH_THEME="darkblood"
+DISABLE_AUTO_UPDATE="true"
+ENABLE_CORRECTION="true"
+plugins=(
+  git
+)
+
+source $ZSH/oh-my-zsh.sh
+export LANG=en_US.UTF-8
+export LS_COLORS=$LS_COLORS:'di=0;33'
