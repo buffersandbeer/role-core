@@ -23,3 +23,13 @@
   copy:
       src: zshrc
       dest: /etc/skel/.zshrc
+
+- name: Add firstrun to skel
+  copy:
+      src: .firstrun
+      dest: /etc/skel/.firstrun
+
+- name: Add firstrun to root
+  copy:
+      src: .firstrun
+      dest: /etc/skel/.firstrun

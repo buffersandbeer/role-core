@@ -14,3 +14,13 @@
   git:
       repo: https://github.com/robbyrussell/oh-my-zsh.git
       dest: /etc/skel/.oh-my-zsh
+
+- name: Install Vundle to skel
+  git:
+      repo: 'https://github.com/VundleVim/Vundle.vim.git'
+      dest: /etc/skel/.vim/bundle/Vundle.vim
+
+- name: Install Vundle to root
+  git:
+      repo: 'https://github.com/VundleVim/Vundle.vim.git'
+      dest: /root/.vim/bundle/Vundle.vim
