@@ -12,6 +12,14 @@ export LANG=en_US.UTF-8
 export LS_COLORS=$LS_COLORS:'di=0;33'
 
 # Alias' to install common languages #
-alias install-rust="curl https://sh.rustup.rs -sSf | sh"
 alias install-node="curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash"
 alias install-ruby="curl -sSL https://get.rvm.io | bash"
+
+# Run these things on first run #
+if [ -f ~/.firstrun ]; then
+    echo "Starting first-time setup"
+    rm ~/.firstrun
+    vim +PluginInstall +qall
+    curl https://sh.rustup.rs -sSf | sh
+    source ~/.profile
+fi
